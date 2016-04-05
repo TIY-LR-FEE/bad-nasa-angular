@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Routing!</title>
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li><a ui-sref="apod">Astronomy Picture of the Day</a></li>
+        <li><a ui-sref="mars({ rover: 'opportunity' })">Mars Rover Photos</a></li>
+        <li><a ui-sref="earth">Earth</a></li>
+      </ul>
+    </nav>
+
+    <div ui-view></div>
+
+    <script src="/js/app.js" charset="utf-8"></script>
+  </body>
+</html>

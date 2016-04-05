@@ -1,0 +1,5 @@
+<h1>{{ apodCtrl.title }}</h1>
+<p>{{ apodCtrl.description }}</p>
+
+<iframe ng-show="apodCtrl.media_type === 'video'" width="560" height="315" ng-src="{{ apodCtrl.url }}" frameborder="0" allowfullscreen></iframe>
+<img ng-show="apodCtrl.media_type === 'image'" ng-src="{{ apodCtrl.url }}" alt="">

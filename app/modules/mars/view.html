@@ -1,0 +1,10 @@
+<ul>
+  <li><a ui-sref="mars({ rover: 'curiosity' })">Curiosity</a></li>
+  <li><a ui-sref="mars({ rover: 'opportunity' })">Opportunity</a></li>
+  <li><a ui-sref="mars({ rover: 'spirit' })">Spirit</a></li>
+</ul>
+
+<div ng-class="{'navcam': photo.camera.name === 'NAVCAM'}" ng-repeat="photo in marsCtrl.photos">
+  <h1>{{ photo.camera.full_name }}</h1>
+  <img ng-src="{{ photo.img_src }}">
+</div>
